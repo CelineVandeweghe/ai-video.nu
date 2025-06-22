@@ -1,0 +1,554 @@
+body {
+    Font-family: 'Antonio', sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.tomorrow-thin {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.tomorrow-extralight {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.tomorrow-light {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.tomorrow-regular {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tomorrow-medium {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.tomorrow-semibold {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.tomorrow-bold {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tomorrow-extrabold {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.tomorrow-black {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.tomorrow-thin-italic {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.tomorrow-extralight-italic {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.tomorrow-light-italic {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.tomorrow-regular-italic {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.tomorrow-medium-italic {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.tomorrow-semibold-italic {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.tomorrow-bold-italic {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.tomorrow-extrabold-italic {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.tomorrow-black-italic {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+.antonio {
+  font-family: "Antonio", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header {
+    background: linear-gradient(to right, #1A1A1A, #000000);
+    text-align: center;
+}
+
+.hero-header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;  /* 👈 duwt de inhoud naar de onderkant */
+    justify-content: center;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: fit;
+    z-index: 0;
+    opacity: 0.4;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: #FFFFFF;
+    padding: 100px 20px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2.2em;
+    font-family: 'Tomorrow', sans-serif;
+    color: #D4AF37;
+}
+
+header p {
+    Font-family: 'Antonio', sans-serif;
+    font-size: 1em;
+    margin: 20px 0;
+}
+
+.cta-buttons a {
+    Font-family: 'Antonio', sans-serif;
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 25px;
+    background-color: #FFFFFF;
+    color: #D4AF37;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.CTA {
+    Font-family: 'Antonio', sans-serif;
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 25px;
+    background-color: #D4AF37 !important;
+    color: #FFFFFF !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+  margin-right: 10vw;
+  margin-left: 10vw;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.features-section {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+
+h2 {
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #D4AF37;
+  text-align: center;
+}
+
+.features-intro p {
+  font-family: 'Antonio', sans-serif;
+  font-size: 1em;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.features-carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.features-carousel {
+  display: flex;
+  font-family: 'Antonio', sans-serif;
+  transition: transform 0.3s ease-in-out;
+  gap: 20px;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+.feature-card {
+  font-family: 'Antonio', sans-serif;
+  flex: 0 0 300px;
+  background-color: #1A1A1A;
+  padding: 20px;
+  text-align: center;
+  scroll-snap-align: start;
+}
+
+.feature-card img {
+  max-width: 325px;
+  margin-bottom: 15px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #D4AF37;
+  font-size: 1.5em;
+  padding: 15px 15px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-button.left {
+  left: 0
+}
+
+.carousel-button.right {
+  right: 0;
+}
+
+.steps-section {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Antonio', sans-serif;
+}
+
+.cap {
+  font-family: 'Antonio', sans-serif;
+  font-size: 0.8rem;
+}
+
+.steps-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.step-card {
+  flex: 0 0 300px;
+  background-color: #1A1A1A;
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.step-card img {
+  max-width: 325px;
+  margin-bottom: 15px;
+}
+
+.features ul, .faq ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li, .faq li {
+    margin: 10px 0;
+}
+
+.portfolio-showcase {
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.video-layout {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+  align-items: flex-start;
+
+}
+
+.featured-video {
+  flex: 2;
+}
+
+.video-thumbnails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #1A1A1A;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.video-thumbnail {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  display: block;
+  
+}
+
+.video-small {
+  width: 80% !important;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  color: #D4AF37;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.video-thumbnail.small .play-icon {
+  font-size: 3em;
+}
+
+.video-layout p {
+  margin-top: 20px;
+  font-family: 'Antonio', sans-serif;
+  font-size: 0.95em;
+}
+
+.testimonials blockquote {
+    background-color: #1A1A1A;
+    padding: 15px;
+    border-left: 5px solid #D4AF37;
+    margin: 20px 0;
+}
+
+.testimonials {
+  margin-top: 40px;
+}
+
+.faq{
+  margin-top: 40px;
+}
+.faq-section {
+  background-color: #000;
+  color: #fff;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  background-color: #1A1A1A;
+  border-left: 5px solid #D4AF37;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  font-family: 'Antonio', sans-serif;
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 1.1em;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 20px;
+}
+
+.faq-question .arrow {
+    transform: rotate(90deg);
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  padding: 15px 20px;
+}
+
+.faq-item.active .arrow {
+  transform: rotate(270deg);
+}
+
+.call-to-action {
+    background-color: #1A1A1A;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.call-to-action a {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 25px;
+    background-color: #FFFFFF;
+    color: #D4AF37;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.CTA2 {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 25px;
+    background-color: #D4AF37 !important;
+    color: #FFFFFF !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.site-footer {
+  background-color: #D4AF37; /* Geel */
+  color: #000000;
+  padding: 40px 20px;
+  font-family: 'Antonio', sans-serif;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start; /* 👈 bovenaan uitlijnen */
+  gap: 20px;
+}
+
+.footer-left h3 {
+  color: #000000;
+  margin-bottom: 10px;
+  font-family: 'Tomorrow', sans-serif;
+}
+
+.footer-right a,
+.email-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-right a:hover,
+.email-link:hover {
+  text-decoration: underline;
+}
+/* Fade-in effect bij scroll */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hovereffecten */
+.cta-buttons a:hover,
+.call-to-action a:hover,
+.CTA:hover,
+.CTA2:hover {
+  filter: brightness(90%);
+  transition: filter 0.3s ease;
+}
+
+.carousel-button:hover {
+  filter: brightness(90%);
+  transition: filter 0.3s ease;
+}
+
+.feature-card,
+.step-card {
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover,
+.step-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-thumbnail img {
+  filter: brightness(80%);
+  transition: filter 0.3s ease;
+}
+
+.video-thumbnail:hover img {
+  filter: brightness(100%);
+}
+
+.faq-item {
+  transition: filter 0.3s ease;
+}
+
+.faq-item:hover {
+  filter: brightness(110%);
+}
