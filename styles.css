@@ -7,6 +7,97 @@ body {
     line-height: 1.5rem;
 }
 
+.watermark-container {
+  position: relative;
+}
+
+.watermark {
+  position: absolute;
+  top: 0;
+  opacity: 0.2; /* Subtiel watermerkeffect */
+}
+
+.watermark.left {
+  left: 50px;
+}
+
+.watermark.right {
+  right: 50px;
+}
+
+.watermark-container .watermark:nth-child(n) {
+  top: calc((1800px * (n - 1)));
+}
+
+.watermark img {
+  width: 30vw; /* 10% van de breedte van het scherm */
+  height: auto;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  font-family: 'Antonio', sans-serif;
+}
+
+.popup-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.popup-content form input,
+.popup-content form select,
+.popup-content form textarea,
+.popup-content form button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.popup-content form button {
+  background-color: #D4AF37;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-content form button:hover {
+  filter: brightness(90%);
+}
+
+select.dropdown {
+  width: 400px;
+}
+
+input,
+textarea {
+  width: 400px;
+  box-sizing: border-box;
+}
+
+
 .tomorrow-thin {
   font-family: "Tomorrow", sans-serif;
   font-weight: 100;
@@ -157,7 +248,7 @@ header {
   position: absolute;
   display: flex;
   align-items: center;
-  left: 10%;
+  left: 15%;
   gap: 50px;
 }
 
@@ -167,7 +258,7 @@ header {
   align-items: center;
   justify-content: flex-end;
   padding-right: 50px !important;
-  right: 20% !important;
+  right: 22% !important;
   gap: 50px;
 }
 
@@ -239,10 +330,10 @@ header {
 .hero-video {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 0 !important;
     width: 100vw;
     height: 100vh;
-    object-fit: fit;
+    object-fit: contain;
     z-index: 0;
     opacity: 0.4;
     margin: 0 !important;
@@ -298,6 +389,7 @@ header p {
     color: #D4AF37;
     text-decoration: none;
     font-weight: bold;
+border: 2px solid #D4AF37;
 }
 
 .CTA {
@@ -320,7 +412,6 @@ section {
 
 .features-section {
   text-align: center;
-  background-color: white;
   color: black;
 }
 
@@ -392,7 +483,6 @@ h2 {
 
 .steps-section {
   text-align: center;
-  background-color: #f2f2f2;;
   color: black;
   font-family: 'Antonio', sans-serif;
 }
@@ -407,6 +497,11 @@ h2 {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  margin-bottom: 50px;
+}
+
+.centreren {
+text-align: center
 }
 
 .step-card {
@@ -432,7 +527,6 @@ h2 {
 }
 
 .portfolio-showcase {
-  background: #000;
   color: black;
   text-align: center;
 }
@@ -466,7 +560,6 @@ h2 {
   margin-top: 40px;
 }
 .faq-section {
-  background-color: white;
   color: black;
 }
 
@@ -632,7 +725,6 @@ h2 {
 .steps-section,
 .portfolio-showcase,
 .faq-section {
-  background-color: white;
   color: black;
 }
 

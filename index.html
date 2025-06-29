@@ -12,6 +12,47 @@
 </head>
 
 <body>
+<div class="watermark-container">
+  <div class="watermark left"><img src="logo.png" alt="Watermerk"></div>
+  <div class="watermark right"><img src="logo.png" alt="Watermerk"></div>
+  <div class="watermark left"><img src="logo.png" alt="Watermerk"></div>
+</div>
+
+<div id="aiVideoPopup" class="popup-overlay">
+  <div class="popup-content">
+    <span class="popup-close">&times;</span>
+    <h2>Ik wil een AI video</h2>
+    <form action="https://formspree.io/f/mkgbynga" method="POST" enctype="multipart/form-data">
+      <label for="naam">Naam:</label>
+      <input type="text" id="naam" name="naam" required>
+
+      <label for="voornaam">Voornaam:</label>
+      <input type="text" id="voornaam" name="voornaam" required>
+
+      <label for="email">E-mailadres:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="soort">Soort video:</label>
+      <select id="soort" name="soort">
+        <option value="presentatie">AI Presentatievideo</option>
+        <option value="shorts">Shorts & Social Clips</option>
+        <option value="text-to-video">Text-to-Video</option>
+        <option value="animatie">AI Animatievideo</option>
+        <option value="gepersonaliseerd">Gepersonaliseerde AI Video</option>
+      </select>
+
+      <label for="omschrijving">Korte omschrijving:</label>
+      <textarea id="omschrijving" name="omschrijving" rows="4"></textarea>
+
+      <label for="bestand">Upload bestand:</label>
+      <input type="file" id="bestand" name="bestand">
+
+      <button type="submit">Verzenden</button>
+    </form>
+  </div>
+</div>
+
+
 <div class="top-bar">
   <p>Bekend van </p>
     <img src="RTL4.png" alt="RTL4" class="top-logo">
@@ -51,7 +92,7 @@
         <p>Slimme AI-video’s op maat – betaalbaar, snel én effectief voor je bedrijf.</p>
         <div class="cta-buttons">
             <a href="#Contact">Ik wil een AI-Video</a>
-            <a href="#Contact" class="CTA">Gratis video-adviesgesprek</a>
+            <a href="https://calendly.com/future-ai-video/30min" target=_blank class="CTA">Gratis video-adviesgesprek</a>
         </div>
     </div>
 </header>
@@ -175,6 +216,31 @@ Whiteboard animatie
       </ul>
     </div>
   </div>
+<div class="cta-buttons">
+            <a href="#Contact">Ik wil een AI-Video</a>
+            <a href="https://calendly.com/future-ai-video/30min"
+ target=_blank class="CTA">Gratis video-adviesgesprek</a>
+
+        </div>
+
+</section>
+
+<section class="centreren fade-in">
+<h2>AI bedrijfsvideo's</h2><br>
+<h3>Wij maken bedrijfsvideo’s in verschillende varianten:</h3>
+<p>
+met echte opnames op locatie, aangevuld of volledig gemaakt met AI.<br><br>
+
+Bijvoorbeeld:<br><br>
+Jijzelf in beeld op locatie<br>
+Een AI-avatar die jouw verhaal vertelt (ook in meerdere talen)<br>
+Of een combinatie van echt + AI<br><br>
+
+
+Jouw complete AI-video: €1.925<br>
+Geen kleine lettertjes. Eén vaste prijs. Alles inbegrepen.</p>
+
+<h3>Snel. Betaalbaar. Professioneel.</h3>
 </section>
 
 <hr class="gouden-lijn">
@@ -195,7 +261,7 @@ Whiteboard animatie
 <section>
     <h2>Wat zeggen klanten?</h2>
     <div class="fade-in testimonials">
-        <blockquote><h3>TravWizards – Ger Swinkels</h3>
+        <blockquote><h3>TravWizards</h3>
 "Wij hebben als TravWizards een bijzonder goede samenwerking gehad! Prachtige opnames, zeer flexibel opnameteam en alles volgens afspraak (meer dan dat zelfs). Wij zijn dus zeer tevreden over dit creatieve team en raden iedereen een samenwerking met hen aan."</blockquote>
         <blockquote>
           <h3>Huub Knapen</h3>
@@ -205,7 +271,7 @@ Whiteboard animatie
           
 "Perfecte samenwerking gehad met jullie. Bedankt voor alles."
         </blockquote>
-        <blockquote><h3>Vrije Universiteit Amsterdam – Bart Bossink</h3>
+        <blockquote><h3>Vrije Universiteit Amsterdam</h3>
 "Zeer goed in het werk. Kan zich goed inleven in een situatie en op basis daarvan oplossingen genereren. Mensgericht, oprecht geïnteresseerd en heeft grote belangstelling in mensen en hun werk. Denkt daarbij ook goed aan de motieven die spelen en de bedrijfsmatige belangen. Weet heel goed inhoud te verenigen met marketing en sales. Een topper!"</blockquote>
     </div>
 </section>
@@ -253,15 +319,6 @@ Whiteboard animatie
 
         <div class="faq-item">
       <button class="faq-question">
-        Wat kost een AI-video?
-        <span class="arrow">&#10095;</span>
-      </button>
-      <div class="faq-answer">
-        <p>De prijs hangt af van het type video en de lengte. We werken met duidelijke pakketten vanaf bijvoorbeeld €295 voor een korte video. Vraag gerust een vrijblijvende offerte aan.</p></div>
-    </div>
-
-        <div class="faq-item">
-      <button class="faq-question">
         Krijg ik een correctieronde?
         <span class="arrow">&#10095;</span>
       </button>
@@ -295,9 +352,9 @@ Whiteboard animatie
 
 <div class="call-to-action">
     <h2>Klaar om jouw AI-video te laten maken?</h2>
-    <p>Binnen 24 uur (2 werkdagen) heb je een kant-en-klare video die jouw verhaal vertelt.</p>
+    <p>Binnen 24 uur (3 werkdagen) heb je een kant-en-klare video die jouw verhaal vertelt.</p>
     <a href="#Contact">Ik wil een AI-Video</a>
-    <a class="CTA2" href="#Contact">Gratis video-adviesgesprek</a>
+    <a class="CTA2" href="https://calendly.com/future-ai-video/30min" target=_blank >Gratis video-adviesgesprek</a>
 </div>
 
 <footer id="Contact" class="site-footer">
@@ -307,8 +364,11 @@ Whiteboard animatie
       <p>
         Bob Spaaklaantje 2A<br>
         1217 ZG Media Park Hilversum<br>
-        Nederland<br><br>
+        Nederland<br>
+<a href="mailto:future@ai-video.nu">future@ai-video.nu</a>
       </p>
+
+
     </div>
 
     <div class="footer-column">
@@ -380,6 +440,34 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 fadeElements.forEach(el => observer.observe(el));
+
+const watermarks = document.querySelectorAll('.watermark');
+watermarks.forEach((wm, index) => {
+  if (index === 0) {
+    wm.style.top = '900px';
+  } else {
+    wm.style.top = `${900 + (index * 2500)}px`;
+  }
+});
+
+document.querySelectorAll('a[href="#Contact"]').forEach(button => {
+  button.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.getElementById('aiVideoPopup').style.display = 'flex';
+  });
+});
+
+document.querySelector('.popup-close').addEventListener('click', () => {
+  document.getElementById('aiVideoPopup').style.display = 'none';
+});
+
+window.addEventListener('click', function(e) {
+  const popup = document.getElementById('aiVideoPopup');
+  if (e.target === popup) {
+    popup.style.display = 'none';
+  }
+});
+
 
 </script>
 
