@@ -488,6 +488,10 @@ h2 {
   right: 0;
 }
 
+.videoinsite {
+  border-radius: 20px
+}
+
 .steps-section {
   text-align: center;
   color: black;
