@@ -17,6 +17,11 @@ body {
   opacity: 0.2; /* Subtiel watermerkeffect */
 }
 
+.kostprijs {
+border-radius: 20px
+}
+
+
 .watermark.left {
   left: 50px;
 }
