@@ -7,6 +7,11 @@ body {
     line-height: 1.5rem;
 }
 
+
+.mobile-nav {
+  display: none
+}
+
 .watermark-container {
   position: relative;
 }
@@ -18,10 +23,13 @@ body {
 }
 
 .kostprijs {
-border-radius: 20px;
-width: 100%;
+  border-radius: 20px;
+  width: 60%;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; /* optioneel, als je ook de inhoud wilt centreren */
 }
-
 
 .watermark.left {
   left: 50px;
@@ -97,12 +105,28 @@ select.dropdown {
   width: 400px;
 }
 
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.image-row img {
+  width: 100%;
+  max-width: 300px; /* Pas aan naar gewenste breedte */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
 input,
 textarea {
   width: 400px;
   box-sizing: border-box;
 }
-
 
 .tomorrow-thin {
   font-family: "Tomorrow", sans-serif;
@@ -237,25 +261,34 @@ header {
     justify-content: center; /* inhoud centreren */
     width: 100%;
     margin-left: 0 !important;
-}
+    white-space: nowrap;
+    align-items: center !important; 
+    height: 40px;
 
-.top-bar p {
-  padding: 0 !important;
-  margin: 10px !important;
+}
+.tekst{
   color: #D4AF37;
 }
 
-.top-bar img {
-  height: 20px;
-  margin: 10px;
+.top-bar span {
+  line-height: 3;
+  display: inline-block;
+  margin-bottom: 35px;
+}
+
+.top-logo{
+  height: 50px;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .nav-left {
   position: absolute;
   display: flex;
   align-items: center;
-  left: 15%;
-  gap: 50px;
+  left: -2%;
+  gap: 2vw;
 }
 
 .nav-right {
@@ -263,9 +296,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-right: 50px !important;
-  right: 22% !important;
-  gap: 50px;
+  right: -2% !important;
+  gap: 2vw;
 }
 
 .logo-wrapper {
@@ -275,44 +307,37 @@ header {
 
 .logo-center {
   display: block;
-  height: 70px;
+  width: 12vw;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .flags {
-  position: absolute;
-  display: flex;
   gap: 10px;
-  right: 0;
-  margin-right: -17vw;
 }
 
 .flag-icon {
-  width: 30px;
+  width: 1.5vw;
   height: auto;
 }
 
 .main-nav {
   margin-top: 55px; /* Pas dit aan op basis van de hoogte van de .top-bar */
   background-color: rgba(26, 26, 26, 0.9) !important;
-  width: 98vw !important;
+  width: 97vw !important;
   margin-left: 1vw !important;
   margin-right: 1vw !important;
   color: #D4AF37;
-  font-size: 2rem;
+  font-size: 1.3rem;
   z-index: 10;
-  left: 0;
   display: flex;
-  align-items: center;
   justify-content: center;
-
 }
 
 .main-nav a {
   text-decoration: none;
   color: #D4AF37;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .hero-header,
@@ -820,4 +845,213 @@ ol li{
 .whatsapp {
   width:150px;
   margin-top: 10px;
+}
+
+/* ---------- RESPONSIVE STIJLEN ---------- */
+@media (max-width: 1050px) {
+  .features-carousel {
+    padding: 0 10px;
+  }
+
+  .cta-buttons a, .CTA, .CTA2 {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  .feature-card,
+  .step-card {
+    flex: 0 0 90%;
+  }
+
+  .features-carousel-container .carousel-button {
+    display: none;
+  }
+
+    .image-row {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  position: relative;
+  height: 60px;
+  background-color: black;
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
+
+.logo-wrapper img {
+  width: 15vw;
+}
+
+.hamburger,
+.close-menu {
+  font-size: 28px;
+  background: #D4AF37;
+  border: none;
+  cursor: pointer;
+}
+
+
+.close-menu {
+  display: none;
+  background-color: #D4AF37;
+  font-size: 28px;
+  border: none;
+  cursor: pointer;
+  z-index: 1100; /* hoger dan nav-menu */
+}
+
+
+.nav-menu {
+display: none;
+flex-direction: column;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh; /* Volledige hoogte van het scherm */
+background-color: black;
+padding: 80px 25px 25px; /* ruimte bovenaan voor logo en knoppen */
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+z-index: 1000;
+font-size: 2em;
+}
+
+.nav-menu a {
+  padding: 10px 0;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  text-decoration: none;
+  color: #D4AF37;
+}
+
+.flags {
+  margin-top: 50px;
+  display: flex;
+  gap: 10px;
+  margin-left: 50px;
+}
+
+.flag-icon {
+  width: 40px;
+  height: auto;
+}
+
+  .main-nav {
+    display:none;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p,
+  .cursive {
+    font-size: 0.9rem;
+  }
+  
+  .top-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+  }
+
+  .top-bar span {
+    white-space: nowrap;
+  }
+
+  .lijntje {
+    white-space: nowrap
+  }
+
+  .top-bar,
+  .main-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .kostprijs {
+    width: 90%;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100% !important;
+  }
+
+  section {
+    margin: 20px;
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.2rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .popup-content {
+    padding: 15px;
+  }
+
+  .footer-column {
+    min-width: 100%;
+  }
+
+  .logo-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Aanvullende verbeteringen */
+.nav-left,
+.nav-right {
+  position: relative;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-nav {
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.hero-video {
+  object-fit: cover;
+}
+
+.watermark img {
+  width: 200px;
+  max-width: 80vw;
+}
+
+.features-carousel {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.features-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.popup-content {
+  max-width: 95vw;
 }

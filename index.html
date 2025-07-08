@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles-responsive-hamburger.css">
     <link rel="icon" href="favicon.png" type="image/png">
 </head>
 
@@ -54,18 +53,21 @@
 </div>
 
 
+
 <div class="top-bar">
-  <p>Bekend van </p>
+  <span class="lijntje">
+    <span class="tekst">Bekend van</span>
     <img src="RTL4.png" alt="RTL4" class="top-logo">
-    <p> en </p>
+    <span class="tekst">en</span>
     <img src="SBS.png" alt="SBS" class="top-logo">
+  </span>
 </div>
 
 <nav class="main-nav">
   <div class="nav-left">
     <a href="#">Home</a>
     <a href="#AI-Services">AI-Video</a>
-    <a href="#AI-Video">AI Services</a>
+    <a href="#Contact">AI Workshop</a>
   </div>
 
   <div class="logo-wrapper">
@@ -73,7 +75,8 @@
   </div>
 
   <div class="nav-right">
-    <a href="#">eBook</a>
+    <a href="#Contact">eBook</a>
+    <a href="#AI-Video">AI Services</a>
     <a href="#Contact">Contact</a>
     <div class="flags">
       <img src="flag-en.png" alt="English" class="flag-icon">
@@ -82,6 +85,32 @@
     </div>
   </div>
 </nav>
+
+<nav class="mobile-nav">
+  <div class="logo-wrapper">
+    <img src="Logo.svg" class="logo-center logo-mobile" alt="logo">
+  </div>
+
+  <button class="hamburger" id="hamburger">&#9776;</button>
+  <button class="close-menu" id="close-menu">&times;</button>
+
+
+  <div class="nav-menu" id="nav-menu">
+    <a href="#">Home</a>
+    <a href="#AI-Services">AI-Video</a>
+    <a href="#Contact">AI Workshop</a>
+    <a href="#Contact">eBook</a>
+    <a href="#AI-Video">AI Services</a>
+    <a href="#Contact">Contact</a>
+    <div class="flags">
+      <img src="flag-en.png" alt="English" class="flag-icon">
+      <img src="flag-ru.png" alt="Russian" class="flag-icon">
+      <img src="flag-nl.png" alt="Dutch" class="flag-icon">
+    </div>
+  </div>
+</nav>
+
+
 
 <header class="hero-header">
     <video autoplay muted loop playsinline class="hero-video">
@@ -246,7 +275,12 @@ Geen kleine lettertjes. Eén vaste prijs. Alles inbegrepen.</p>
 
 <h3>Snel. Betaalbaar. Professioneel.</h3>
 
-<img class="kostprijs" src="kostprijs.jpg" alt="Kostprijs">
+<div class="image-row">
+  <img src="1.jpg" alt="Brons">
+  <img src="2.jpg" alt="Zilver">
+  <img src="3.jpg" alt="Goud">
+</div>
+
 </section>
 
 <hr class="gouden-lijn">
@@ -469,6 +503,33 @@ window.addEventListener('click', function(e) {
   if (e.target === popup) {
     popup.style.display = 'none';
   }
+});
+
+const hamburger = document.getElementById('hamburger');
+const closeMenu = document.getElementById('close-menu');
+const navMenu = document.getElementById('nav-menu');
+const navLinks = navMenu.querySelectorAll('a');
+
+function openMenu() {
+  navMenu.style.display = 'flex';
+  hamburger.style.display = 'none';
+  closeMenu.style.display = 'block';
+  document.body.style.overflow = 'hidden'; // Scroll blokkeren
+}
+
+function closeMenuFunc() {
+  navMenu.style.display = 'none';
+  hamburger.style.display = 'block';
+  closeMenu.style.display = 'none';
+  document.body.style.overflow = 'auto'; // Scroll herstellen
+}
+
+hamburger.addEventListener('click', openMenu);
+closeMenu.addEventListener('click', closeMenuFunc);
+
+// Sluit menu bij klikken op een link
+navLinks.forEach(link => {
+  link.addEventListener('click', closeMenuFunc);
 });
 
 
