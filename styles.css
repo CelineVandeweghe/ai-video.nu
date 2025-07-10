@@ -8,9 +8,10 @@ body {
 }
 
 .madeby {
-    position: absolute;
-    left: 0;
-    margin-left: 5vw
+  position: absolute;
+  left: 5vw;
+  line-height: 3;
+  color: #D4AF37;
 }
 
 .mobile-nav {
