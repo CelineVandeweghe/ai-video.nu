@@ -9,8 +9,7 @@ body {
 
 .madeby {
   position: absolute;
-  left: 5vw;
-  line-height: 3;
+  left: 3vw;
   color: #D4AF37;
     z-index: 3000
 }
@@ -1005,6 +1004,10 @@ font-size: 2em;
 }
 
 @media (max-width: 480px) {
+    .madeby {
+        display: none
+}
+    
   .hero-content h1 {
     font-size: 1.2rem;
   }
