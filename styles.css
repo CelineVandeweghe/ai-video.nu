@@ -7,6 +7,9 @@ body {
     line-height: 1.5rem;
 }
 
+.madeby {
+    margin-left: -10vw;
+}
 
 .mobile-nav {
   display: none
